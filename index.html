@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app>
 <head>
 <meta charset="utf-8">
 <title>Bootstrap, from Twitter</title>
@@ -46,14 +46,14 @@ body {
 
 <body>
 
-	<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="navbar navbar-inverse navbar-fixed-top" ng-include="'templates/partials/topnav.html'">
 		
 	</div>
 
 	<div class="container-fluid">
 		<div class="row-fluid">
 			<div class="span3">
-				<div class="well sidebar-nav">
+				<div class="well sidebar-nav" ng-include="'templates/partials/sidebar.html'">
 					
 				</div>
 				<!--/.well -->
@@ -128,7 +128,7 @@ body {
 
 		<hr>
 
-		<footer>
+		<footer ng-include="'templates/partials/footer.html'">
 			
 		</footer>
 
