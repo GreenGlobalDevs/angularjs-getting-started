@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Bootstrap, from Twitter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Le styles -->
+<base href="/" />
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<style type="text/css">
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+.sidebar-nav {
+	padding: 9px 0;
+}
+
+@media ( max-width : 980px) {
+	/* Enable use of floated navbar text */
+	.navbar-text.pull-right {
+		float: none;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
+</style>
+<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+<!-- Fav and touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="ico/favicon.png">
+</head>
+
+<body>
+
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container-fluid">
+				<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+				</button>
+				<a class="brand" href="#">Project name</a>
+				<div class="nav-collapse collapse">
+					<p class="navbar-text pull-right">
+						Logged in as <a href="#" class="navbar-link">Username</a>
+					</p>
+					<ul class="nav">
+						<li class="active">
+							<a href="/">Home</a>
+						</li>
+						<li>
+							<a href="/listing.html">Listing</a>
+						</li>
+						<li>
+							<a href="/about.html">About</a>
+						</li>
+						<li>
+							<a href="/contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span3">
+				<div class="well sidebar-nav">
+					<ul class="nav nav-list">
+						<li class="nav-header">Sidebar</li>
+						<li class="active">
+							<a href="#">Link</a>
+						</li>
+						<li>
+							<a href="#">Link</a>
+						</li>
+						<li>
+							<a href="#">Link</a>
+						</li>
+						<li>
+							<a href="#">Link</a>
+						</li>
+						<li class="nav-header">Sidebar</li>
+						<li>
+							<a href="#">Link</a>
+						</li>
+						<li>
+							<a href="#">Link</a>
+						</li>
+						<li>
+							<a href="#">Link</a>
+						</li>
+						<li>
+							<a href="#">Link</a>
+						</li>
+						<li>
+							<a href="#">Link</a>
+						</li>
+						<li>
+							<a href="#">Link</a>
+						</li>
+						<li class="nav-header">Sidebar</li>
+						<li>
+							<a href="#">Link</a>
+						</li>
+						<li>
+							<a href="#">Link</a>
+						</li>
+						<li>
+							<a href="#">Link</a>
+						</li>
+					</ul>
+				</div>
+				<!--/.well -->
+			</div>
+			<!--/span-->
+			<div class="span9">
+				<div class="row-fluid">
+					<ul class="media-list">
+						<li class="media">
+							<a class="pull-left" href="/detail.html"> <img class="media-object" data-src="holder.js/64x64" alt="64x64"
+									src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACe0lEQVR4Xu2Y54oqQRSES8WIqIgJxICKCRFB3/8JxARGzAoGzBgQFJfToLj3snd3Z3Dvoqf/CGKf6a6uU9/YisViccELDwULwA7gFuAMeOEMBIcgU4ApwBRgCjAFXlgBxiBjkDHIGGQMvjAE+M8QY5AxyBhkDDIGGYMvrIBsDM5mM9TrdRwOB2i1WoTDYTidzneS1mo1DIdDhEIh+P3+T+V+RM2PHipLgO12i3w+D5PJhGAwiEKhAI1Gg1QqJT5pLBYLlEolnE6nLwnwiJr/UlyWAP1+H61WC7FYDC6X66/nnM9nFItFLJdLXC6XmwCdTgftdht2u118R8LRb5PJJNbrtaSan9rqgx/IEqBSqWA8HgvrUwvodDpEo1HYbDbxuKtAFosF8/n8JgC5IZfLYb/fC/eQQNQa5CKpNf+LAOVyGaPRSJw+bYBOUqVSIZPJCMtTe+j1epAA5JT7DCDhqtWqOHmj0Yh0Og21Wg05NaWIIMsBtNjJZIJ4PC5EoA2ThROJBCjIptOpsPVqtUKz2XwnAAmUzWZBPe/1ekV40pBT88cF6PV64mQjkQjcbvet32kz3W5XWPzPcXXBNQcoG6iFSCiz2Qw5NX9cgGtiGwwG0fsUeEql8mbn64JIjHsHXOcpFAo4HA4MBgNYrVZBj91uJ5z03ZpSNk9zZLUAFaAWaDQaOB6PYtHUDtTz9+NeAJ/Pd7N5IBCAx+MR2bHZbG5O+m7Nr7xbPOQ9QKrqv2mebAf8ps1IWQsLwDdCfCPEN0J8IyQlPZ9lDlOAKcAUYAowBZ4l0aXsgynAFGAKMAWYAlLS81nmMAWYAkwBpgBT4FkSXco+mAKvToE3EUN4nw3vFosAAAAASUVORK5CYII="
+									style="width: 64px; height: 64px;">
+							</a>
+							<div class="media-body">
+								<h4 class="media-heading">Media heading</h4>
+								<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+							</div>
+						</li>
+						<li class="media">
+							<a class="pull-left" href="/detail.html"> <img class="media-object" data-src="holder.js/64x64" alt="64x64"
+									src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACe0lEQVR4Xu2Y54oqQRSES8WIqIgJxICKCRFB3/8JxARGzAoGzBgQFJfToLj3snd3Z3Dvoqf/CGKf6a6uU9/YisViccELDwULwA7gFuAMeOEMBIcgU4ApwBRgCjAFXlgBxiBjkDHIGGQMvjAE+M8QY5AxyBhkDDIGGYMvrIBsDM5mM9TrdRwOB2i1WoTDYTidzneS1mo1DIdDhEIh+P3+T+V+RM2PHipLgO12i3w+D5PJhGAwiEKhAI1Gg1QqJT5pLBYLlEolnE6nLwnwiJr/UlyWAP1+H61WC7FYDC6X66/nnM9nFItFLJdLXC6XmwCdTgftdht2u118R8LRb5PJJNbrtaSan9rqgx/IEqBSqWA8HgvrUwvodDpEo1HYbDbxuKtAFosF8/n8JgC5IZfLYb/fC/eQQNQa5CKpNf+LAOVyGaPRSJw+bYBOUqVSIZPJCMtTe+j1epAA5JT7DCDhqtWqOHmj0Yh0Og21Wg05NaWIIMsBtNjJZIJ4PC5EoA2ThROJBCjIptOpsPVqtUKz2XwnAAmUzWZBPe/1ekV40pBT88cF6PV64mQjkQjcbvet32kz3W5XWPzPcXXBNQcoG6iFSCiz2Qw5NX9cgGtiGwwG0fsUeEql8mbn64JIjHsHXOcpFAo4HA4MBgNYrVZBj91uJ5z03ZpSNk9zZLUAFaAWaDQaOB6PYtHUDtTz9+NeAJ/Pd7N5IBCAx+MR2bHZbG5O+m7Nr7xbPOQ9QKrqv2mebAf8ps1IWQsLwDdCfCPEN0J8IyQlPZ9lDlOAKcAUYAowBZ4l0aXsgynAFGAKMAWYAlLS81nmMAWYAkwBpgBT4FkSXco+mAKvToE3EUN4nw3vFosAAAAASUVORK5CYII="
+									style="width: 64px; height: 64px;">
+							</a>
+							<div class="media-body">
+								<h4 class="media-heading">Media heading</h4>
+								<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+							</div>
+						</li>
+						<li class="media">
+							<a class="pull-left" href="/detail.html"> <img class="media-object" data-src="holder.js/64x64" alt="64x64"
+									src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACe0lEQVR4Xu2Y54oqQRSES8WIqIgJxICKCRFB3/8JxARGzAoGzBgQFJfToLj3snd3Z3Dvoqf/CGKf6a6uU9/YisViccELDwULwA7gFuAMeOEMBIcgU4ApwBRgCjAFXlgBxiBjkDHIGGQMvjAE+M8QY5AxyBhkDDIGGYMvrIBsDM5mM9TrdRwOB2i1WoTDYTidzneS1mo1DIdDhEIh+P3+T+V+RM2PHipLgO12i3w+D5PJhGAwiEKhAI1Gg1QqJT5pLBYLlEolnE6nLwnwiJr/UlyWAP1+H61WC7FYDC6X66/nnM9nFItFLJdLXC6XmwCdTgftdht2u118R8LRb5PJJNbrtaSan9rqgx/IEqBSqWA8HgvrUwvodDpEo1HYbDbxuKtAFosF8/n8JgC5IZfLYb/fC/eQQNQa5CKpNf+LAOVyGaPRSJw+bYBOUqVSIZPJCMtTe+j1epAA5JT7DCDhqtWqOHmj0Yh0Og21Wg05NaWIIMsBtNjJZIJ4PC5EoA2ThROJBCjIptOpsPVqtUKz2XwnAAmUzWZBPe/1ekV40pBT88cF6PV64mQjkQjcbvet32kz3W5XWPzPcXXBNQcoG6iFSCiz2Qw5NX9cgGtiGwwG0fsUeEql8mbn64JIjHsHXOcpFAo4HA4MBgNYrVZBj91uJ5z03ZpSNk9zZLUAFaAWaDQaOB6PYtHUDtTz9+NeAJ/Pd7N5IBCAx+MR2bHZbG5O+m7Nr7xbPOQ9QKrqv2mebAf8ps1IWQsLwDdCfCPEN0J8IyQlPZ9lDlOAKcAUYAowBZ4l0aXsgynAFGAKMAWYAlLS81nmMAWYAkwBpgBT4FkSXco+mAKvToE3EUN4nw3vFosAAAAASUVORK5CYII="
+									style="width: 64px; height: 64px;">
+							</a>
+							<div class="media-body">
+								<h4 class="media-heading">Media heading</h4>
+								<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+							</div>
+						</li>
+						<li class="media">
+							<a class="pull-left" href="/detail.html"> <img class="media-object" data-src="holder.js/64x64" alt="64x64"
+									src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACe0lEQVR4Xu2Y54oqQRSES8WIqIgJxICKCRFB3/8JxARGzAoGzBgQFJfToLj3snd3Z3Dvoqf/CGKf6a6uU9/YisViccELDwULwA7gFuAMeOEMBIcgU4ApwBRgCjAFXlgBxiBjkDHIGGQMvjAE+M8QY5AxyBhkDDIGGYMvrIBsDM5mM9TrdRwOB2i1WoTDYTidzneS1mo1DIdDhEIh+P3+T+V+RM2PHipLgO12i3w+D5PJhGAwiEKhAI1Gg1QqJT5pLBYLlEolnE6nLwnwiJr/UlyWAP1+H61WC7FYDC6X66/nnM9nFItFLJdLXC6XmwCdTgftdht2u118R8LRb5PJJNbrtaSan9rqgx/IEqBSqWA8HgvrUwvodDpEo1HYbDbxuKtAFosF8/n8JgC5IZfLYb/fC/eQQNQa5CKpNf+LAOVyGaPRSJw+bYBOUqVSIZPJCMtTe+j1epAA5JT7DCDhqtWqOHmj0Yh0Og21Wg05NaWIIMsBtNjJZIJ4PC5EoA2ThROJBCjIptOpsPVqtUKz2XwnAAmUzWZBPe/1ekV40pBT88cF6PV64mQjkQjcbvet32kz3W5XWPzPcXXBNQcoG6iFSCiz2Qw5NX9cgGtiGwwG0fsUeEql8mbn64JIjHsHXOcpFAo4HA4MBgNYrVZBj91uJ5z03ZpSNk9zZLUAFaAWaDQaOB6PYtHUDtTz9+NeAJ/Pd7N5IBCAx+MR2bHZbG5O+m7Nr7xbPOQ9QKrqv2mebAf8ps1IWQsLwDdCfCPEN0J8IyQlPZ9lDlOAKcAUYAowBZ4l0aXsgynAFGAKMAWYAlLS81nmMAWYAkwBpgBT4FkSXco+mAKvToE3EUN4nw3vFosAAAAASUVORK5CYII="
+									style="width: 64px; height: 64px;">
+							</a>
+							<div class="media-body">
+								<h4 class="media-heading">Media heading</h4>
+								<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+							</div>
+						</li>
+						<li class="media">
+							<a class="pull-left" href="/detail.html"> <img class="media-object" data-src="holder.js/64x64" alt="64x64"
+									src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACe0lEQVR4Xu2Y54oqQRSES8WIqIgJxICKCRFB3/8JxARGzAoGzBgQFJfToLj3snd3Z3Dvoqf/CGKf6a6uU9/YisViccELDwULwA7gFuAMeOEMBIcgU4ApwBRgCjAFXlgBxiBjkDHIGGQMvjAE+M8QY5AxyBhkDDIGGYMvrIBsDM5mM9TrdRwOB2i1WoTDYTidzneS1mo1DIdDhEIh+P3+T+V+RM2PHipLgO12i3w+D5PJhGAwiEKhAI1Gg1QqJT5pLBYLlEolnE6nLwnwiJr/UlyWAP1+H61WC7FYDC6X66/nnM9nFItFLJdLXC6XmwCdTgftdht2u118R8LRb5PJJNbrtaSan9rqgx/IEqBSqWA8HgvrUwvodDpEo1HYbDbxuKtAFosF8/n8JgC5IZfLYb/fC/eQQNQa5CKpNf+LAOVyGaPRSJw+bYBOUqVSIZPJCMtTe+j1epAA5JT7DCDhqtWqOHmj0Yh0Og21Wg05NaWIIMsBtNjJZIJ4PC5EoA2ThROJBCjIptOpsPVqtUKz2XwnAAmUzWZBPe/1ekV40pBT88cF6PV64mQjkQjcbvet32kz3W5XWPzPcXXBNQcoG6iFSCiz2Qw5NX9cgGtiGwwG0fsUeEql8mbn64JIjHsHXOcpFAo4HA4MBgNYrVZBj91uJ5z03ZpSNk9zZLUAFaAWaDQaOB6PYtHUDtTz9+NeAJ/Pd7N5IBCAx+MR2bHZbG5O+m7Nr7xbPOQ9QKrqv2mebAf8ps1IWQsLwDdCfCPEN0J8IyQlPZ9lDlOAKcAUYAowBZ4l0aXsgynAFGAKMAWYAlLS81nmMAWYAkwBpgBT4FkSXco+mAKvToE3EUN4nw3vFosAAAAASUVORK5CYII="
+									style="width: 64px; height: 64px;">
+							</a>
+							<div class="media-body">
+								<h4 class="media-heading">Media heading</h4>
+								<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+							</div>
+						</li>
+						<li class="media">
+							<a class="pull-left" href="/detail.html"> <img class="media-object" data-src="holder.js/64x64" alt="64x64"
+									src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACe0lEQVR4Xu2Y54oqQRSES8WIqIgJxICKCRFB3/8JxARGzAoGzBgQFJfToLj3snd3Z3Dvoqf/CGKf6a6uU9/YisViccELDwULwA7gFuAMeOEMBIcgU4ApwBRgCjAFXlgBxiBjkDHIGGQMvjAE+M8QY5AxyBhkDDIGGYMvrIBsDM5mM9TrdRwOB2i1WoTDYTidzneS1mo1DIdDhEIh+P3+T+V+RM2PHipLgO12i3w+D5PJhGAwiEKhAI1Gg1QqJT5pLBYLlEolnE6nLwnwiJr/UlyWAP1+H61WC7FYDC6X66/nnM9nFItFLJdLXC6XmwCdTgftdht2u118R8LRb5PJJNbrtaSan9rqgx/IEqBSqWA8HgvrUwvodDpEo1HYbDbxuKtAFosF8/n8JgC5IZfLYb/fC/eQQNQa5CKpNf+LAOVyGaPRSJw+bYBOUqVSIZPJCMtTe+j1epAA5JT7DCDhqtWqOHmj0Yh0Og21Wg05NaWIIMsBtNjJZIJ4PC5EoA2ThROJBCjIptOpsPVqtUKz2XwnAAmUzWZBPe/1ekV40pBT88cF6PV64mQjkQjcbvet32kz3W5XWPzPcXXBNQcoG6iFSCiz2Qw5NX9cgGtiGwwG0fsUeEql8mbn64JIjHsHXOcpFAo4HA4MBgNYrVZBj91uJ5z03ZpSNk9zZLUAFaAWaDQaOB6PYtHUDtTz9+NeAJ/Pd7N5IBCAx+MR2bHZbG5O+m7Nr7xbPOQ9QKrqv2mebAf8ps1IWQsLwDdCfCPEN0J8IyQlPZ9lDlOAKcAUYAowBZ4l0aXsgynAFGAKMAWYAlLS81nmMAWYAkwBpgBT4FkSXco+mAKvToE3EUN4nw3vFosAAAAASUVORK5CYII="
+									style="width: 64px; height: 64px;">
+							</a>
+							<div class="media-body">
+								<h4 class="media-heading">Media heading</h4>
+								<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+							</div>
+						</li>
+						<li class="media">
+							<a class="pull-left" href="/detail.html"> <img class="media-object" data-src="holder.js/64x64" alt="64x64"
+									src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACe0lEQVR4Xu2Y54oqQRSES8WIqIgJxICKCRFB3/8JxARGzAoGzBgQFJfToLj3snd3Z3Dvoqf/CGKf6a6uU9/YisViccELDwULwA7gFuAMeOEMBIcgU4ApwBRgCjAFXlgBxiBjkDHIGGQMvjAE+M8QY5AxyBhkDDIGGYMvrIBsDM5mM9TrdRwOB2i1WoTDYTidzneS1mo1DIdDhEIh+P3+T+V+RM2PHipLgO12i3w+D5PJhGAwiEKhAI1Gg1QqJT5pLBYLlEolnE6nLwnwiJr/UlyWAP1+H61WC7FYDC6X66/nnM9nFItFLJdLXC6XmwCdTgftdht2u118R8LRb5PJJNbrtaSan9rqgx/IEqBSqWA8HgvrUwvodDpEo1HYbDbxuKtAFosF8/n8JgC5IZfLYb/fC/eQQNQa5CKpNf+LAOVyGaPRSJw+bYBOUqVSIZPJCMtTe+j1epAA5JT7DCDhqtWqOHmj0Yh0Og21Wg05NaWIIMsBtNjJZIJ4PC5EoA2ThROJBCjIptOpsPVqtUKz2XwnAAmUzWZBPe/1ekV40pBT88cF6PV64mQjkQjcbvet32kz3W5XWPzPcXXBNQcoG6iFSCiz2Qw5NX9cgGtiGwwG0fsUeEql8mbn64JIjHsHXOcpFAo4HA4MBgNYrVZBj91uJ5z03ZpSNk9zZLUAFaAWaDQaOB6PYtHUDtTz9+NeAJ/Pd7N5IBCAx+MR2bHZbG5O+m7Nr7xbPOQ9QKrqv2mebAf8ps1IWQsLwDdCfCPEN0J8IyQlPZ9lDlOAKcAUYAowBZ4l0aXsgynAFGAKMAWYAlLS81nmMAWYAkwBpgBT4FkSXco+mAKvToE3EUN4nw3vFosAAAAASUVORK5CYII="
+									style="width: 64px; height: 64px;">
+							</a>
+							<div class="media-body">
+								<h4 class="media-heading">Media heading</h4>
+								<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+							</div>
+						</li>
+						<li class="media">
+							<a class="pull-left" href="/detail.html"> <img class="media-object" data-src="holder.js/64x64" alt="64x64"
+									src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACe0lEQVR4Xu2Y54oqQRSES8WIqIgJxICKCRFB3/8JxARGzAoGzBgQFJfToLj3snd3Z3Dvoqf/CGKf6a6uU9/YisViccELDwULwA7gFuAMeOEMBIcgU4ApwBRgCjAFXlgBxiBjkDHIGGQMvjAE+M8QY5AxyBhkDDIGGYMvrIBsDM5mM9TrdRwOB2i1WoTDYTidzneS1mo1DIdDhEIh+P3+T+V+RM2PHipLgO12i3w+D5PJhGAwiEKhAI1Gg1QqJT5pLBYLlEolnE6nLwnwiJr/UlyWAP1+H61WC7FYDC6X66/nnM9nFItFLJdLXC6XmwCdTgftdht2u118R8LRb5PJJNbrtaSan9rqgx/IEqBSqWA8HgvrUwvodDpEo1HYbDbxuKtAFosF8/n8JgC5IZfLYb/fC/eQQNQa5CKpNf+LAOVyGaPRSJw+bYBOUqVSIZPJCMtTe+j1epAA5JT7DCDhqtWqOHmj0Yh0Og21Wg05NaWIIMsBtNjJZIJ4PC5EoA2ThROJBCjIptOpsPVqtUKz2XwnAAmUzWZBPe/1ekV40pBT88cF6PV64mQjkQjcbvet32kz3W5XWPzPcXXBNQcoG6iFSCiz2Qw5NX9cgGtiGwwG0fsUeEql8mbn64JIjHsHXOcpFAo4HA4MBgNYrVZBj91uJ5z03ZpSNk9zZLUAFaAWaDQaOB6PYtHUDtTz9+NeAJ/Pd7N5IBCAx+MR2bHZbG5O+m7Nr7xbPOQ9QKrqv2mebAf8ps1IWQsLwDdCfCPEN0J8IyQlPZ9lDlOAKcAUYAowBZ4l0aXsgynAFGAKMAWYAlLS81nmMAWYAkwBpgBT4FkSXco+mAKvToE3EUN4nw3vFosAAAAASUVORK5CYII="
+									style="width: 64px; height: 64px;">
+							</a>
+							<div class="media-body">
+								<h4 class="media-heading">Media heading</h4>
+								<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+							</div>
+						</li>
+						<li class="media">
+							<a class="pull-left" href="/detail.html"> <img class="media-object" data-src="holder.js/64x64" alt="64x64"
+									src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACe0lEQVR4Xu2Y54oqQRSES8WIqIgJxICKCRFB3/8JxARGzAoGzBgQFJfToLj3snd3Z3Dvoqf/CGKf6a6uU9/YisViccELDwULwA7gFuAMeOEMBIcgU4ApwBRgCjAFXlgBxiBjkDHIGGQMvjAE+M8QY5AxyBhkDDIGGYMvrIBsDM5mM9TrdRwOB2i1WoTDYTidzneS1mo1DIdDhEIh+P3+T+V+RM2PHipLgO12i3w+D5PJhGAwiEKhAI1Gg1QqJT5pLBYLlEolnE6nLwnwiJr/UlyWAP1+H61WC7FYDC6X66/nnM9nFItFLJdLXC6XmwCdTgftdht2u118R8LRb5PJJNbrtaSan9rqgx/IEqBSqWA8HgvrUwvodDpEo1HYbDbxuKtAFosF8/n8JgC5IZfLYb/fC/eQQNQa5CKpNf+LAOVyGaPRSJw+bYBOUqVSIZPJCMtTe+j1epAA5JT7DCDhqtWqOHmj0Yh0Og21Wg05NaWIIMsBtNjJZIJ4PC5EoA2ThROJBCjIptOpsPVqtUKz2XwnAAmUzWZBPe/1ekV40pBT88cF6PV64mQjkQjcbvet32kz3W5XWPzPcXXBNQcoG6iFSCiz2Qw5NX9cgGtiGwwG0fsUeEql8mbn64JIjHsHXOcpFAo4HA4MBgNYrVZBj91uJ5z03ZpSNk9zZLUAFaAWaDQaOB6PYtHUDtTz9+NeAJ/Pd7N5IBCAx+MR2bHZbG5O+m7Nr7xbPOQ9QKrqv2mebAf8ps1IWQsLwDdCfCPEN0J8IyQlPZ9lDlOAKcAUYAowBZ4l0aXsgynAFGAKMAWYAlLS81nmMAWYAkwBpgBT4FkSXco+mAKvToE3EUN4nw3vFosAAAAASUVORK5CYII="
+									style="width: 64px; height: 64px;">
+							</a>
+							<div class="media-body">
+								<h4 class="media-heading">Media heading</h4>
+								<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--/span-->
+		</div>
+		<!--/row-->
+
+		<hr>
+
+		<footer>
+			<p>&copy; Company 2013</p>
+		</footer>
+
+	</div>
+	<!--/.fluid-container-->
+
+	<!-- Le javascript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
