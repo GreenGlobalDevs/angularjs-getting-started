@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+<head>
+<meta charset="utf-8">
+<title>Bootstrap, from Twitter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Le styles -->
+<base href="/" />
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<style type="text/css">
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+.sidebar-nav {
+	padding: 9px 0;
+}
+
+@media ( max-width : 980px) {
+	/* Enable use of floated navbar text */
+	.navbar-text.pull-right {
+		float: none;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
+
+.border-right {
+	border-right: 1px solid #ddd;
+}
+</style>
+<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+<!-- Fav and touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="ico/favicon.png">
+<script src="scripts/angular/angular.min.js"></script>
+<script src="scripts/controllers/controller.js"></script>
+</head>
+
+<body>
+
+	<div class="navbar navbar-inverse navbar-fixed-top" ng-include="'templates/partials/topnav.html'"></div>
+
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span3">
+				<div class="well sidebar-nav" ng-include="'templates/partials/sidebar.html'"></div>
+				<!--/.well -->
+			</div>
+			<!--/span-->
+			<div class="span9">
+				<div class="row-fluid">
+					<div class="span6 border-right">
+						<form class="form-horizontal">
+							<div class="control-group">
+								<label class="control-label" for="inputEmail">Email</label>
+								<div class="controls">
+									<input type="text" id="inputEmail" placeholder="Email" ng-model="email">
+								</div>
+							</div>
+
+							<div class="control-group">
+								<label class="control-label" for="inputEmail">Enter number</label>
+								<div class="controls">
+									<input type="text" id="inputEmail" placeholder="Enter number" ng-model="number" ng-init="number=1">
+								</div>
+							</div>
+
+							<div class="control-group">
+								<div class="controls">
+									<label class="checkbox"> <input type="checkbox" ng-model="checkme"> Check me
+									</label>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="span6">
+						<p>
+							<span style="font-weight: bold">Email</span> <span class="controls" ng-bind="email"> </span>
+						</p>
+
+						<p>
+							<span style="font-weight: bold">3 * number = </span> <span class="controls" ng-bind="number * 3"> </span><br/>
+							<span style="font-weight: bold">3 + number = </span> <span class="controls" ng-bind="number + 3"> </span><br/>
+						</p>
+
+						<p>
+							<span style="font-weight: bold">Check me: </span> <span class="controls" ng-bind="checkme"> </span>
+						</p>
+					</div>
+				</div>
+			</div>
+			<!--/span-->
+		</div>
+		<!--/row-->
+
+		<hr>
+
+		<footer ng-include="'templates/partials/footer.html'"> </footer>
+
+	</div>
+	<!--/.fluid-container-->
+
+	<!-- Le javascript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="scripts/jquery/jquery.min.js"></script>
+	<script src="scripts/bootstrap/bootstrap.min.js"></script>
+
+</body>
+</html>
